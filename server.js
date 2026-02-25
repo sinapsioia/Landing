@@ -5,10 +5,21 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const isProduction = process.env.NODE_ENV === 'production';
 
-// Servir archivos estáticos con cache en producción
+// Servir archivos estáticos con cache inteligente
+// Assets (imágenes, etc) = cache largo
+// HTML = sin cache para ver cambios inmediatamente
 app.use(express.static(__dirname, {
-    maxAge: isProduction ? '1d' : 0,
-    etag: true
+    maxAge: 0,  // Sin cache por defecto
+    etag: true,
+    setHeaders: (res, filepath) => {
+        // Cache largo para assets
+        if (filepath.match(/\.(jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|eot|mp4|webm)$/)) {
+            res.setHeader('Cache-Control', 'public, max-age=86400'); // 1 día
+        } else {
+            // Sin cache para HTML/CSS/JS para ver cambios inmediatamente
+            res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+        }
+    }
 }));
 
 // Headers de seguridad
