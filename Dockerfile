@@ -17,6 +17,11 @@ RUN if [ -f package-lock.json ]; then npm ci --omit=dev; else npm install --omit
 COPY index.html ./
 COPY server.js ./
 COPY assets/ ./assets/
+COPY components/ ./components/
+COPY app.jsx ./
+COPY neural-bg.js ./
+COPY parallax.js ./
+COPY tweaks-panel.jsx ./
 
 # Ajustar permisos para el usuario no-root
 RUN chown -R nodejs:nodejs /app
