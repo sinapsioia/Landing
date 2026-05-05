@@ -3,89 +3,84 @@
 <desc id="desc">Isotipo con trazo en forma de cerebro y la palabra SINAPSIO con el tagline AI Appointment Agents</desc>
 <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#0f1b3d" />
-        <stop offset="100%" stop-color="#060a1c" />
+        <stop offset="0%" stop-color="#0f1b3d"></stop>
+        <stop offset="100%" stop-color="#060a1c"></stop>
     </linearGradient>
     <linearGradient id="stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#00d9ff" />
-        <stop offset="50%" stop-color="#5d7bff" />
-        <stop offset="100%" stop-color="#a949ff" />
+        <stop offset="0%" stop-color="#00d9ff"></stop>
+        <stop offset="50%" stop-color="#5d7bff"></stop>
+        <stop offset="100%" stop-color="#a949ff"></stop>
     </linearGradient>
     <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#4dd3ff" />
-        <stop offset="50%" stop-color="#6c80ff" />
-        <stop offset="100%" stop-color="#c86bff" />
+        <stop offset="0%" stop-color="#4dd3ff"></stop>
+        <stop offset="50%" stop-color="#6c80ff"></stop>
+        <stop offset="100%" stop-color="#c86bff"></stop>
     </linearGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-        <feGaussianBlur stdDeviation="16" result="blur" />
+        <feGaussianBlur stdDeviation="16" result="blur"></feGaussianBlur>
         <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
+            <feMergeNode in="blur"></feMergeNode>
+            <feMergeNode in="blur"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
         </feMerge>
     </filter>
 </defs>
 
-<rect width="1200" height="600" fill="url(#bg)" />
+<rect width="1200" height="600" fill="url(#bg)"></rect>
 
-<!-- Brain-style S curve -->
-<path d="M260 180
-         C380 70 620 80 700 200
-         C760 290 700 360 560 370
-         C430 380 370 430 470 470
-         C570 510 740 480 830 410"
-      fill="none" stroke="url(#stroke)" stroke-width="22" stroke-linecap="round" filter="url(#glow)" />
 
-<!-- Connection nodes -->
+<path d="M260 180&#xA;         C380 70 620 80 700 200&#xA;         C760 290 700 360 560 370&#xA;         C430 380 370 430 470 470&#xA;         C570 510 740 480 830 410" fill="none" stroke="url(#stroke)" stroke-width="22" stroke-linecap="round" filter="url(#glow)"></path>
+
+
 <g fill="#0cf2ff" opacity="0.9">
-    <circle cx="300" cy="180" r="10" />
-    <circle cx="380" cy="120" r="10" />
-    <circle cx="520" cy="110" r="10" />
-    <circle cx="650" cy="140" r="10" />
-    <circle cx="720" cy="210" r="10" />
-    <circle cx="690" cy="290" r="10" />
-    <circle cx="590" cy="350" r="10" />
-    <circle cx="470" cy="370" r="10" />
-    <circle cx="420" cy="430" r="10" />
-    <circle cx="520" cy="470" r="10" />
-    <circle cx="660" cy="460" r="10" />
-    <circle cx="770" cy="390" r="10" />
+    <circle cx="300" cy="180" r="10"></circle>
+    <circle cx="380" cy="120" r="10"></circle>
+    <circle cx="520" cy="110" r="10"></circle>
+    <circle cx="650" cy="140" r="10"></circle>
+    <circle cx="720" cy="210" r="10"></circle>
+    <circle cx="690" cy="290" r="10"></circle>
+    <circle cx="590" cy="350" r="10"></circle>
+    <circle cx="470" cy="370" r="10"></circle>
+    <circle cx="420" cy="430" r="10"></circle>
+    <circle cx="520" cy="470" r="10"></circle>
+    <circle cx="660" cy="460" r="10"></circle>
+    <circle cx="770" cy="390" r="10"></circle>
 </g>
 
-<!-- Accent nodes -->
+
 <g fill="#c86bff" opacity="0.9">
-    <circle cx="340" cy="150" r="8" />
-    <circle cx="450" cy="100" r="8" />
-    <circle cx="610" cy="125" r="8" />
-    <circle cx="745" cy="180" r="8" />
-    <circle cx="740" cy="250" r="8" />
-    <circle cx="610" cy="320" r="8" />
-    <circle cx="520" cy="330" r="8" />
-    <circle cx="450" cy="410" r="8" />
-    <circle cx="560" cy="450" r="8" />
-    <circle cx="700" cy="430" r="8" />
+    <circle cx="340" cy="150" r="8"></circle>
+    <circle cx="450" cy="100" r="8"></circle>
+    <circle cx="610" cy="125" r="8"></circle>
+    <circle cx="745" cy="180" r="8"></circle>
+    <circle cx="740" cy="250" r="8"></circle>
+    <circle cx="610" cy="320" r="8"></circle>
+    <circle cx="520" cy="330" r="8"></circle>
+    <circle cx="450" cy="410" r="8"></circle>
+    <circle cx="560" cy="450" r="8"></circle>
+    <circle cx="700" cy="430" r="8"></circle>
 </g>
 
-<!-- Chat bubble icon -->
+
 <g transform="translate(820 180)">
-    <rect x="0" y="0" width="120" height="80" rx="18" fill="rgba(15,26,52,0.85)" stroke="url(#stroke)" stroke-width="4" />
-    <rect x="22" y="32" width="14" height="14" rx="7" fill="#7ae1ff" />
-    <rect x="52" y="32" width="14" height="14" rx="7" fill="#7ae1ff" />
-    <rect x="82" y="32" width="14" height="14" rx="7" fill="#7ae1ff" />
-    <polygon points="36,80 56,80 46,104" fill="url(#stroke)" />
+    <rect x="0" y="0" width="120" height="80" rx="18" fill="rgba(15,26,52,0.85)" stroke="url(#stroke)" stroke-width="4"></rect>
+    <rect x="22" y="32" width="14" height="14" rx="7" fill="#7ae1ff"></rect>
+    <rect x="52" y="32" width="14" height="14" rx="7" fill="#7ae1ff"></rect>
+    <rect x="82" y="32" width="14" height="14" rx="7" fill="#7ae1ff"></rect>
+    <polygon points="36,80 56,80 46,104" fill="url(#stroke)"></polygon>
 </g>
 
-<!-- Calendar icon -->
+
 <g transform="translate(850 80)">
-    <rect x="0" y="0" width="120" height="120" rx="18" fill="rgba(15,26,52,0.85)" stroke="url(#stroke)" stroke-width="4" />
-    <rect x="20" y="36" width="80" height="64" rx="10" fill="#0f1b3d" stroke="#4dd3ff" stroke-width="3" />
-    <rect x="30" y="46" width="20" height="20" rx="4" fill="#4dd3ff" />
-    <rect x="70" y="46" width="20" height="20" rx="4" fill="#4dd3ff" />
-    <rect x="30" y="76" width="20" height="20" rx="4" fill="#4dd3ff" />
-    <rect x="70" y="76" width="20" height="20" rx="4" fill="#4dd3ff" />
+    <rect x="0" y="0" width="120" height="120" rx="18" fill="rgba(15,26,52,0.85)" stroke="url(#stroke)" stroke-width="4"></rect>
+    <rect x="20" y="36" width="80" height="64" rx="10" fill="#0f1b3d" stroke="#4dd3ff" stroke-width="3"></rect>
+    <rect x="30" y="46" width="20" height="20" rx="4" fill="#4dd3ff"></rect>
+    <rect x="70" y="46" width="20" height="20" rx="4" fill="#4dd3ff"></rect>
+    <rect x="30" y="76" width="20" height="20" rx="4" fill="#4dd3ff"></rect>
+    <rect x="70" y="76" width="20" height="20" rx="4" fill="#4dd3ff"></rect>
 </g>
 
-<!-- Brand text -->
+
 <g font-family="Outfit, Arial, sans-serif" text-anchor="middle">
     <text x="600" y="420" font-size="96" font-weight="800" fill="url(#text)" letter-spacing="6">SINAPSIO</text>
     <text x="600" y="470" font-size="34" font-weight="600" fill="#cfd9ff" letter-spacing="3">AI APPOINTMENT AGENTS</text>
